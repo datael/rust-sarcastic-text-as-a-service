@@ -1,10 +1,14 @@
 # rust-sarcastic-text-as-a-service
-Sarcastic Text as a Service
+SaRcAstiC TExt as a Service
 
 ## Commands
 
-### POST /
+### `POST /`
 
 #### Request
 
-url-form-encoding
+Create a form request (url-form-encoding) and set original_text to the text you'd like made sarcastic.
+
+#### Response
+
+Returns SArCaStiC tExT as plain text in the body of the response.
