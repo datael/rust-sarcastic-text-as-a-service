@@ -1,3 +1,5 @@
+#![warn(clippy::pedantic)]
+
 mod api;
 
 use actix_web::{web, App, Error, HttpResponse, HttpServer, Responder, get};
@@ -16,6 +18,7 @@ async fn main() -> std::io::Result<()> {
     .await
 }
 
+#[allow(clippy::unused_async)]
 #[get("/")]
 async fn index() -> Result<impl Responder, Error> {
     Ok(HttpResponse::Ok()
